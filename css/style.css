@@ -87,6 +87,7 @@ text-decoration: none;
 }
 .banner-text p{
     color: #fff;
+    font-family: 'Raleway',sans-serif;
 }
 .banner a{
     text-decoration: none;
@@ -102,4 +103,66 @@ text-decoration: none;
     width: 85%;
     margin: 4em auto;
     overflow: auto;
+}
+.ads-items{
+    width: 48.5%;
+    float: left;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.ads1{
+    margin-right: 3%;
+    background-image: url(../images/ads-img1.jpg);
+}
+.ads2{
+    background-image: url(../images/ads-img2.jpg);
+}
+.ads-items h3{
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+    line-height: 1.2em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+.ads-items a{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px #312a26;
+}
+.merch{
+    width: 85%;
+    margin: 4em auto;
+}
+.merch-header{
+    text-align: center;
+}
+.merch-header span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color:#c7a17a;
+}
+.merch-header h2{
+    text-transform: uppercase;
+    color:#312a26;
+}
+.merch-header hr{
+    background-color: #c7a17a;
+    height: 2px;
+    width: 25%;
+    margin: auto;
+}
+.merch-gallery{
+    margin-top: 2em;
+    overflow: auto;
+}
+.merch-items:nth-child(4), .merch-items:nth-child(8){
+    margin-right: 0;
 }
