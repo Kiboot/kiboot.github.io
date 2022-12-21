@@ -63,7 +63,7 @@ color: #312a26;
 text-decoration: none;
 }
 .banner {
-    background-image: url('../images/banner-bg.jpg');
+    background-image: url('../img/banner-bg.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -116,10 +116,10 @@ text-decoration: none;
 
 .ads1{
     margin-right: 3%;
-    background-image: url(../images/ads-img1.jpg);
+    background-image: url(../img/ads-img1.jpg);
 }
 .ads2{
-    background-image: url(../images/ads-img2.jpg);
+    background-image: url(../img/ads-img2.jpg);
 }
 .ads-items h3{
     text-transform: uppercase;
