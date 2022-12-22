@@ -209,3 +209,19 @@ text-decoration: none;
     font-style: italic;
     text-shadow: 3px 3px 6px #312a26;
 }
+.discount-text h2{
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px #312a26;
+}
+.discount-text a{
+    text-transform: none;
+    display: inline-block;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, .5);
+    color: #312a26;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    margin-top: 1em;
+}
