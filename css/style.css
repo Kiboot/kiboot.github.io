@@ -184,3 +184,14 @@ text-decoration: none;
 	height: 350px;
 	object-fit: cover;
 }
+/* start of the discount banner */
+
+.discount{
+    width: 85%;
+    margin: 4em auto;
+    background-image: url(../img/discount-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    position: relative;
+}
