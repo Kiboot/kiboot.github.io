@@ -17,6 +17,9 @@
 h1, h2, h3, h4, h5, h6{
     font-family: 'Oswald', sans-serif;
 }
+p{
+    font-family: 'Raleway', sans-serif;
+}
 
 *{
     margin: 0;
@@ -30,10 +33,10 @@ h1, h2, h3, h4, h5, h6{
     width: 100vw;
     margin: auto;
 }
-
+/* header */
 .header{
     overflow: auto;
-    width: 75vw;
+    width: 85vw;
     margin: 1em auto;
 }
 h1.logo{
@@ -62,6 +65,7 @@ font-weight: 700;
 color: #312a26;
 text-decoration: none;
 }
+/* banner */
 .banner {
     background-image: url('../img/banner-bg.jpg');
     background-size: cover;
@@ -97,8 +101,10 @@ text-decoration: none;
     font-weight: 700;
     margin-top: 1em;
     font-family: 'Raleway',sans-serif;
-    color: #fff;
+    color: 
+    #fff;
 }
+/* ads 1st part */
 .ads{
     width: 85%;
     margin: 4em auto;
@@ -120,6 +126,8 @@ text-decoration: none;
 .ads2{
     background-image: url('../img/ads-img2.jpg');
 }
+
+
 .ads-text {
     position: absolute;
     top: 30%;
@@ -140,8 +148,10 @@ text-decoration: none;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
+    margin-top: 1em;
     text-shadow: 3px 3px 6px #312a26;
 }
+/* merch */
 .merch{
     width: 85%;
     margin: 4em auto;
@@ -189,7 +199,7 @@ text-decoration: none;
 .discount{
     width: 85%;
     margin: 4em auto;
-    background-image: url(../img/discount-img.jpg);
+    background-image: url('../img/discount-img.jpg');
     background-size: cover;
     background-position: center;
     height: 350px;
@@ -275,7 +285,7 @@ form h3{
 }
 form h3::after{
     content: "";
-    background-image: url(../img/reservation-cards.png);
+    background-image: url('../img/reservation-cards.png');
     background-size: contain;
     background-repeat: no-repeat;
     display:block;
@@ -293,7 +303,7 @@ form input[type="submit"]{
 }
 /* Footer Area */
 .footer{
-    background-image: url(../img/footer-img.jpg);
+    background-image: url('../img/footer-img.jpg');
     background-size: cover;
     background-position: center;
     padding-top: 2em;
@@ -301,16 +311,24 @@ form input[type="submit"]{
 }
 .footer-contents{
     width: 85%;
-    float: left;
-    margin-right: 1%;
+    margin: auto;
+    overflow: auto;
 }
 .footer-contents:nth-child(4){
     margin-right: 0;
 }
+.footer-widgets{
+    width: 24.5%;
+    float: left;
+    margin-right: 1%;
+}
+
 .footer-widgets h3{
     color: white;
     text-transform: uppercase;
     text-shadow: 3px 3px 6px #312a26;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .footer-widgets h4{
     color: #fff;
@@ -323,9 +341,10 @@ form input[type="submit"]{
     font-family: 'Raleway',sans-serif;
     text-shadow: 3px 3px 6px #312a26;
 }
-.footer-form {
+.footer-form *{
     width: auto;
 }
+
 .footer-social {
     color: white;
     background-color: #19100f;
