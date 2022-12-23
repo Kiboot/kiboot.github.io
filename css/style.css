@@ -291,3 +291,35 @@ form input[type="submit"]{
     font-weight: 700;
     text-transform: uppercase;
 }
+/* Footer Area */
+.footer{
+    background-image: url(../img/footer-img.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.footer-contents{
+    width: 85%;
+    float: left;
+    margin-right: 1%;
+}
+.footer-contents:nth-child(4){
+    margin-right: 0;
+}
+.footer-widgets h3{
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px #312a26;
+}
+.footer-widgets h4{
+    color: #fff;
+}
+.footer-widgets p{
+    color:#c7a17a;
+}
+.footer td, th{
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    text-shadow: 3px 3px 6px #312a26;
+}
