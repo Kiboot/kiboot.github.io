@@ -323,3 +323,23 @@ form input[type="submit"]{
     font-family: 'Raleway',sans-serif;
     text-shadow: 3px 3px 6px #312a26;
 }
+.footer-form {
+    width: auto;
+}
+.footer-social {
+    color: white;
+    background-color: #19100f;
+    overflow: auto;
+    padding: 1em 7.5%;
+}
+.social-widget {
+    width: 32.66%;
+    float: left;
+    text-align: center;
+}
+.social-widget h3{
+    text-transform: uppercase;
+}
+.social-widget img{
+    width: 1.5em
+}
