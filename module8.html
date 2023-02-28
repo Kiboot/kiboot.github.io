@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/prism.css"/>
     <script src="script/pageload.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
     
     <title>Kib's Portfolio Page | Module 8 </title>
 </head>
@@ -46,33 +47,21 @@
                         <p><strong>1. Internal</strong></p>
                         <p>You can type your code directly into the HTML file if you are using <code>&lt;script&gt;</code>.
                         The code will execute on the position in which it is inserted, so unless it is intentional, it is preferable to have your code on the bottom of your page, just before the <code>&lt;&sol;body&gt;</code> though inserting it inside <code>&lt;head&gt;&lt;&sol;head&gt;</code> also works.</p>
-                        <div class="codebox">
-                          <pre>
-                            <code class="language-html line-numbers" data-prismjs-copy="Copy">
-&lt;!-- display hello world to an HTML file --&gt;
-&lt;script&gt;
-  document.write(&quot;Hello World!);
-&lt;/script&gt;</code>
-                          </pre>
-                        </div>
+<pre class="line-numbers" tabindex="0"><code class="language-html">&lt;!-- display hello world to an HTML file --&gt;
+&lt;script&gt;</code><code class="language-css">  document.write(&quot;Hello World!&quot;);</code><code class="language-html">&lt;/script&gt;
+</code></pre>
                         <p><strong>2. External</strong></p>
                         <p>You can an external javascript file by using <code>&lt;script&gt;</code> along with the <code>src</code> attribute pointing to the file in question. Javascript files use <code>.js</code> as its file extension. Inserting external JavaScript files are preferably located before the <code>&lt;&sol;body&gt;</code> or inside <code>&lt;head&gt;&lt;&sol;head&gt;</code>.</p>
-                        <div class="codebox mb-2">
-                          <pre>
-                            <code class="language-html line-numbers" data-prismjs-copy="Copy">
-&lt;!-- inserting an external JavaScript file --&gt;
-&lt;script src=&quot;myscript.js&quot;&gt;&lt;/script&gt;</code>
-                          </pre>
-                        </div>
+                          <pre><code class="language-html line-numbers" data-prismjs-copy="Copy">&lt;!-- inserting an external JavaScript file --&gt;
+&lt;script src=&quot;myscript.js&quot;&gt;&lt;/script&gt;
+</code></pre>
                         <p><strong>3. Inline</strong></p>
                         <p>Inline Javascript code insertion is usually done when a specific function is to be executed inside an HTML element through an event trigger (We call these triggers HTML events, which will be discussed in detail on <a href="module9.html">Module 9</a>.)</p>
-                        <div class="codebox mb-2">
-                          <pre>
-                            <code class="language-html line-numbers" data-prismjs-copy="Copy">
-&lt;!-- javascript function using button as an onclick trigger --&gt;
-&lt;button onclick=&quot;this.innerHTML = Date()&quot;&gt;The time is?&lt;/button&gt;</code>
-                          </pre>
-                        </div>
+<pre><code class="language-html line-numbers" data-prismjs-copy="Copy">&lt;!-- javascript function using button as an onclick trigger --&gt;
+&lt;button onclick=&quot;this.innerHTML = Date()&quot;&gt;
+  The time is?
+&lt;/button&gt;
+</code></pre>
                     </div>
                   </div>
                 </div>
@@ -86,48 +75,41 @@
                     <div class="accordion-body">
                         <p>Learning Guide Download: <a href="https://khub.smc.pshs.edu.ph/mod/resource/view.php?id=54508&redirect=1">Here</a></p>
 
-                        <p><strong>Javascript Variable Declaration: var, let and const</strong></p>
+                        <p class="h4">Javascript Variable Declaration: <code>var</code>, <code> let</code> and <code>const</code></p>
 
                       <p>
                         There are 3 variable definitions applicable in Javascript:<code> var</code>,<code> let</code> and<code> const</code>. The syntax is as follows:
                       </p>
-                      <div class="codebox mb-2">
-                        <pre>
-                          <code class="language-js line-numbers" data-prismjs-copy="Copy">
-definition name;
-//where definition is the keyword for the variable definition</code>
-                        </pre>
-                      </div>
-                      <p><strong>1. var</strong></p>
-                      <p>The most commonly used variable definition is the use of the keyword <code>var</code>. Its use scope spans throughout the entire function it was declared.</p>
-                      <div class="codebox mb-2">
-                        <pre>
-                          <code class="language-js line-numbers" data-prismjs-copy="Copy">
-var x;
-//variable x is defined</code>
-                        </pre>
-                      </div>
+                        <pre class="language-js line-numbers"><code  data-prismjs-copy="Copy">definition name;
+//where definition is the keyword for the variable definition
+</code></pre>
+                      <p class="fw-bold">1. var</p>
+                      <p>The most commonly used variable definition is the use of the keyword <code>var</code>. Its use scope spans throughout the entire function (referred to as <strong>global</strong>) it was declared.</p>
+                        <pre><code class="language-js line-numbers" data-prismjs-copy="Copy">var x;
+//variable x is defined</code></pre>
 
-                      <p><strong>2. let</strong></p>
+                      <p class="fw-bold">2. let</p>
                       <p><code>let</code> keyword almost works the same way as <code>var</code> except on how usability scope is only limited in the code block (inside conditions like <code>if(){ }</code> or loops like <code>while(){ }</code>) it is used.</p>
-                      <div class="codebox mb-2">
-                        <pre>
-                          <code class="language-js line-numbers" data-prismjs-copy="Copy">
-let x;
-//scope limited variable x is defined</code>
-                        </pre>
-                      </div>
-                      <p><strong>3. const</strong></p>
-                      <p><code>const</code> is a declaration keyword used to define constant values. When code is executed, whatever the value during the definition is, will be immutable or unchangeable until the code execution ends. Forcing a value to this declaration will cause an error </p>
-                      <div class="codebox mb-2">
-                        <pre>
-                          <code class="language-js line-numbers" data-prismjs-copy="Copy">
-const x = 5;
+                        <pre><code class="language-js line-numbers" data-prismjs-copy="Copy">let x;
+//scope limited variable x is defined</code></pre>
+
+                      <p class="fw-bold">3. const</p>
+                      <p><code>const</code> is a declaration keyword used to define constant values. When code is executed, whatever the value during the definition is, will be immutable or unchangeable until the code execution ends. Forcing a value to this declaration will cause an error. </p>
+                        <pre class="mb-4"><code class="language-js line-numbers" data-prismjs-copy="Copy">const x = 5;
 //constant x is defined with a value of 5
 x = 3;
-//inserting a new value or modifying it causes an error.</code>
-                        </pre>
-                      </div>
+//inserting a new value or modifying it causes an error.</code></pre>
+                      <p class="h4">Javascript Data Types</p>
+                      <p class="fw-bold">Differences from "Real" Programming Languages</p>
+                      <p class="mb-2">Javascript is a scripting language optimized with HTML web page interactivity in mind, therefore avoiding limitationss related to Programming Languages, including data types. The reason of the great amount of datatypes in programming languages such as C++ and Java is so that the use of memory can be micromanaged, if needed. For example, a <code>byte</code> variable will only consume 8 bits of memory. This is something programmers in the older days have to consider as typically, memory devices during the time these programming languages were developed only had megabytes worth, at most. Nowadays, memory management is left for the web browsers to do, allowing developers to focus on the functionality.</p>
+                      <p class="fw-bold">JavaScript Data Types</p>
+                      <p>If we go back to the topic of variable declarations, you may notice that unlike C++ from your previous year, variable datatypes in Javascript aren't declared when defining a variable. You may have thought that it is because it may have been derived from Java Programming Programming, which is not. As a matter of fact, variable declarations in Java is derived exactly from C/C++. Javascript variable declarations are general purpose, taking on a data type depending on the data inside it.</p>
+                      <pre class="mb-4"><code class="language-js line-numbers" data-prismjs-copy="Copy">var x = 6;
+//variable x is defined as an integer data type with a value of 6
+x = "Entschuldigung, die würstchen ist lecker!";
+//x is now a string
+x = true;
+//and now, x is a boolean</code></pre>
                     </div>
                   </div>
                 </div>
@@ -162,6 +144,9 @@ x = 3;
 
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script> -->
+    <script src="script/prism.js"></script>
+
 </body>
 </html>
