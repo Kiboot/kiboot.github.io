@@ -44,13 +44,33 @@
                         <p>Learning Guide Download: <a href="https://khub.smc.pshs.edu.ph/mod/resource/view.php?id=54507&redirect=1">Here</a></p>
                         <p><strong>The use of JavaScript is pretty straightforward</strong> The code is executed whenever the <code>&lt;script&gt; &lt;&sol;script&gt; </code>is used, though there are several methods of executing javascript.</p>
                         <p><strong>1. Internal</strong></p>
-                        <p>You can type your code directly into the HTML file if you are using <code>&lt;script&gt;</code>. It is preferable to have your code on the bottom of your page, just before the <code>&lt;&sol;body&gt;</code> though inserting it inside <code>&lt;head&gt;&lt;&sol;head&gt;</code> also works.</p>
+                        <p>You can type your code directly into the HTML file if you are using <code>&lt;script&gt;</code>.
+                        The code will execute on the position in which it is inserted, so unless it is intentional, it is preferable to have your code on the bottom of your page, just before the <code>&lt;&sol;body&gt;</code> though inserting it inside <code>&lt;head&gt;&lt;&sol;head&gt;</code> also works.</p>
                         <div class="codebox">
                           <pre>
                             <code class="language-html line-numbers" data-prismjs-copy="Copy">
+&lt;!-- display hello world to an HTML file --&gt;
 &lt;script&gt;
   document.write(&quot;Hello World!);
 &lt;/script&gt;</code>
+                          </pre>
+                        </div>
+                        <p><strong>2. External</strong></p>
+                        <p>You can an external javascript file by using <code>&lt;script&gt;</code> along with the <code>src</code> attribute pointing to the file in question. Javascript files use <code>.js</code> as its file extension. Inserting external JavaScript files are preferably located before the <code>&lt;&sol;body&gt;</code> or inside <code>&lt;head&gt;&lt;&sol;head&gt;</code>.</p>
+                        <div class="codebox mb-2">
+                          <pre>
+                            <code class="language-html line-numbers" data-prismjs-copy="Copy">
+&lt;!-- inserting an external JavaScript file --&gt;
+&lt;script src=&quot;myscript.js&quot;&gt;&lt;/script&gt;</code>
+                          </pre>
+                        </div>
+                        <p><strong>3. Inline</strong></p>
+                        <p>Inline Javascript code insertion is usually done when a specific function is to be executed inside an HTML element through an event trigger (We call these triggers HTML events, which will be discussed in detail on <a href="module9.html">Module 9</a>.)</p>
+                        <div class="codebox mb-2">
+                          <pre>
+                            <code class="language-html line-numbers" data-prismjs-copy="Copy">
+&lt;!-- javascript function using button as an onclick trigger --&gt;
+&lt;button onclick=&quot;this.innerHTML = Date()&quot;&gt;The time is?&lt;/button&gt;</code>
                           </pre>
                         </div>
                     </div>
