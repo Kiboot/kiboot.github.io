@@ -85,7 +85,49 @@
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
                     <div class="accordion-body">
                         <p>Learning Guide Download: <a href="https://khub.smc.pshs.edu.ph/mod/resource/view.php?id=54508&redirect=1">Here</a></p>
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+                        <p><strong>Javascript Variable Declaration: var, let and const</strong></p>
+
+                      <p>
+                        There are 3 variable definitions applicable in Javascript:<code> var</code>,<code> let</code> and<code> const</code>. The syntax is as follows:
+                      </p>
+                      <div class="codebox mb-2">
+                        <pre>
+                          <code class="language-js line-numbers" data-prismjs-copy="Copy">
+definition name;
+//where definition is the keyword for the variable definition</code>
+                        </pre>
+                      </div>
+                      <p><strong>1. var</strong></p>
+                      <p>The most commonly used variable definition is the use of the keyword <code>var</code>. Its use scope spans throughout the entire function it was declared.</p>
+                      <div class="codebox mb-2">
+                        <pre>
+                          <code class="language-js line-numbers" data-prismjs-copy="Copy">
+var x;
+//variable x is defined</code>
+                        </pre>
+                      </div>
+
+                      <p><strong>2. let</strong></p>
+                      <p><code>let</code> keyword almost works the same way as <code>var</code> except on how usability scope is only limited in the code block (inside conditions like <code>if(){ }</code> or loops like <code>while(){ }</code>) it is used.</p>
+                      <div class="codebox mb-2">
+                        <pre>
+                          <code class="language-js line-numbers" data-prismjs-copy="Copy">
+let x;
+//scope limited variable x is defined</code>
+                        </pre>
+                      </div>
+                      <p><strong>3. const</strong></p>
+                      <p><code>const</code> is a declaration keyword used to define constant values. When code is executed, whatever the value during the definition is, will be immutable or unchangeable until the code execution ends. Forcing a value to this declaration will cause an error </p>
+                      <div class="codebox mb-2">
+                        <pre>
+                          <code class="language-js line-numbers" data-prismjs-copy="Copy">
+const x = 5;
+//constant x is defined with a value of 5
+x = 3;
+//inserting a new value or modifying it causes an error.</code>
+                        </pre>
+                      </div>
                     </div>
                   </div>
                 </div>
