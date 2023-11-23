@@ -49,7 +49,7 @@ nav{
 footer{
     text-align: center;
     position: relative;
-    bottom: -35vw;
+    bottom: 0vw;
     background-color: rgba(65, 64, 64, 0.669);
 }
 @media screen and (max-width: 600px){
