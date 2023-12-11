@@ -1,0 +1,40 @@
+*{margin: 0;}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 6dvh;
+}
+a{text-decoration: none; color: white}
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2dvh;
+    padding-bottom: 2dvh;
+    background: #1d1d1da1;
+    color: white;
+    position: fixed;
+    width: 100dvw;
+    font-family:'Gill Sans',sans-serif;
+    font-size: 1.1rem;
+    
+}
+nav{}
+section{
+    height: 100dvh;
+    width: 100dvw;
+    display: block;
+    overflow: hidden;
+}
+#banner{
+    background: rgb(6, 6, 6)
+}
+.bodies{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#terra{
+    background-image: url(../images/terra.gif);
+    width: 400px;
+    height: 400px;
+    }
