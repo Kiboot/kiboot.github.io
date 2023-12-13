@@ -1,9 +1,11 @@
-*{margin: 0;}
+*{margin: 0;padding: 0; box-sizing: border-box; }
 html{
     scroll-behavior: smooth;
     scroll-padding: 6dvh;
+    overflow-x: hidden;
 }
 a{text-decoration: none; color: white}
+a:visited{ text-decoration: underline;}
 header{
     display: flex;
     justify-content: space-around;
@@ -17,24 +19,119 @@ header{
     font-size: 1.1rem;
     
 }
-nav{}
+main{}
+header{position: fixed; z-index: 98;}
 section{
     height: 100dvh;
     width: 100dvw;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
     overflow: hidden;
+    padding-top: 4vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
-#banner{
-    background: rgb(6, 6, 6)
+section#banner{
+    position: relative;
+    z-index: 80;
+    padding: 0;
+    background: linear-gradient(117deg, rgba(1,1,3,1) 0%, rgba(7,7,79,1) 68%, rgba(0,86,128,1) 100%);
+    h1{
+        position: relative;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: xx-large;
+        z-index: 99;
+        text-align: center;
+        top: 25vh;
+        text-shadow: 5px 5px black;
+        color: white;
+    }
 }
+section#instructions{
+    background: white;
+}
+#instructions > p{
+    display: block;
+    height: 100vh;
+}
+
+/** heavenly bodies **/
 .bodies{
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+    z-index: 90;
 }
 #terra{
     background-image: url(../images/terra.gif);
     width: 400px;
     height: 400px;
-    }
+    animation:terramotion 180s linear infinite;
+    
+}
+#aria{
+    background-image: url(../images/aria.gif);
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    animation: ariamotion 20s linear infinite;
+
+}
+#devourer{
+    background-image: url(../images/devourer.gif);
+    width: 100px;
+    height: 100px;
+    animation: blackholegrow 600s;
+}
+#stars{
+    background: black url(../images/stars.png) repeat center;
+    display: inline-block;
+    width: 100vw;
+    height: 100dvh;
+    z-index: 81;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+#twinklers{
+    display: inline-block;
+    width:10000px;
+	height: 100%;
+	background: transparent url(../images/twinkling.png) repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 82;
+    animation:move-background 20s linear infinite;
+}
+#ambience{
+    background: linear-gradient(117deg, rgba(1, 1, 3, 0.247) 0%, rgba(7, 7, 79, 0.514) 68%, rgba(0, 85, 128, 0.24) 100%);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 83;
+
+}
+@keyframes ariamotion{
+    0%  {transform:translate(200px, -300px);}
+    100%{transform:translate(1400px, 1000px);}
+}
+@keyframes move-background {
+    0%  {transform: translate3d(0px, 0px, 0px);}
+    100%{transform: translate3d(1000px, 0px, 0px);}
+  }
+@keyframes terramotion{
+    0%  {transform:translate(-400px, -400px);}
+    100%{transform:translate(1900px, 400px);}
+}
+
+@keyframes blackholegrow{
+    0%{transform: scale(.05);}
+    100%{transform: scale(5);}
+}
+/** heavenly bodies end **/
