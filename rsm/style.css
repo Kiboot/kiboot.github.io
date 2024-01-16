@@ -1,7 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+*{ margin: 0; padding: 0; }
 
 /** 
 color palette
@@ -10,23 +7,15 @@ CBC5EA
 73628A
 313D5A
 183642
-
 **/
 
-
-@font-face {
-    font-family: Roboto;
-    src: url(Roboto-Regular.ttf);
-}
-@font-face {
-    font-family: Oswald;
-    src: url(Oswald-v.ttf);
-}
-
+@font-face { font-family: Roboto; src: url(Roboto-Regular.ttf); }
+@font-face { font-family: Oswald; src: url(Oswald-v.ttf); }
+a{ text-decoration: none;}
 header{
-    height: 25vh;
+    height: 40vh;
     background-color: gray;
-    background: url('bg.jpg') no-repeat;
+    background: url('bg01.jpg') no-repeat fixed center;
     background-size: cover;
 }
 body{
@@ -35,23 +24,13 @@ body{
     background: #eaeaea;
     font-family: Roboto;
 }
-h1{
-    font-family: Roboto;
-    font-size: 5.5vh;
-    font-smooth: auto;
-}
-h2{
-    font-size: 3vh;
-    font-family: Oswald;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-h3{
-    font-size: 2.6vh;
-    font-family: Oswald;
-    text-transform: uppercase;
-    font-weight: 400;
-}
+h1{ font-family: Roboto; font-size: 5vh; font-smooth: auto; }
+h2, h3{font-family: Oswald; text-transform: uppercase; font-weight: 400;}
+h2{ font-size: 3vh; }
+h3{ font-size: 2.6vh; }
+main{ margin: auto; width: 80vw; }
+p{ margin-top: 10px; margin-bottom: 10px; }
+.contact{ display: inline; }
 
 .ppic{
     border: #eaeaea 5px solid;
@@ -73,21 +52,38 @@ h3{
     width: 15vh;
     float: left;
 }
-.phone{
+.phone, .envelope, .home, .linkedin {
     display: inline-block;
-    background: url('telephone-fill.svg') no-repeat center;
     width: 2.6vh;
     height: 2.6vh;
 }
-.envelope{
-    display: inline-block;
-    background: url('envelope-fill.svg') no-repeat center;
-    width: 2.6vh;
-    height: 2.6vh;
+.phone{ background: url('telephone-fill.svg') no-repeat center; }
+.envelope{ background: url('envelope-fill.svg') no-repeat center; }
+.home{ background: url('house-fill.svg') no-repeat center;}
+.linkedin{ background: url('linkedin.svg') no-repeat center;}
+
+.education, .experience, .profile, .skills, .reference { text-align: left; }
+aside>p, article>p {text-align: left;}
+.pt1{ display: flex; justify-content: space-around; }
+.a-exp{ width: 45vw; }
+.a-skills{ width: 30vw; }
+section>aside, section>article{}
+.year{ margin-top: 10px; margin-bottom: 10px; display: block;}
+.work>p{
+    text-align: left;
 }
-.home{
+.year, .workplace, .workaddr { margin-top: 10px; margin-bottom: 10px; }
+
+.skillpin{
+    font-size: 13px;
+    border: black 1px solid;
+    padding: 4px;
+    border-radius: 15px;
     display: inline-block;
-    background: url('house-fill.svg') no-repeat center;
-    width: 2.6vh;
-    height: 2.6vh;
+    margin-bottom: 3px;
 }
+#l1{background-color: #BDBDBD;}
+#l2{background-color: #A1C181;}
+#l3{background-color: #5EB1BF;}
+#l4{background-color: #9D69A3;}
+.align{ margin-top: 10px; margin-bottom: 10px; }
