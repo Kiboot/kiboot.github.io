@@ -11,7 +11,7 @@ CBC5EA
 
 @font-face { font-family: Roboto; src: url(Roboto-Regular.ttf); }
 @font-face { font-family: Oswald; src: url(Oswald-v.ttf); }
-a{ text-decoration: none;}
+a{ text-decoration: none; color: black;}
 header{
     height: 40vh;
     background-color: gray;
@@ -30,7 +30,7 @@ h2{ font-size: 3vh; }
 h3{ font-size: 2.6vh; }
 main{ margin: auto; width: 80vw; }
 p{ margin-top: 10px; margin-bottom: 10px; }
-.contact{ display: inline; }
+.contact{ display: inline-block; }
 
 .ppic{
     border: #eaeaea 5px solid;
@@ -52,11 +52,9 @@ p{ margin-top: 10px; margin-bottom: 10px; }
     width: 15vh;
     float: left;
 }
-.phone, .envelope, .home, .linkedin {
-    display: inline-block;
-    width: 2.6vh;
-    height: 2.6vh;
-}
+.phone,.envelope,.home,.linkedin {display: inline-block;width: 2.6vh;height: 2.6vh;}
+.b{font-weight: bold;}
+.u{text-decoration: underline;}
 .phone{ background: url('telephone-fill.svg') no-repeat center; }
 .envelope{ background: url('envelope-fill.svg') no-repeat center; }
 .home{ background: url('house-fill.svg') no-repeat center;}
@@ -65,15 +63,15 @@ p{ margin-top: 10px; margin-bottom: 10px; }
 .education, .experience, .profile, .skills, .reference { text-align: left; }
 aside>p, article>p {text-align: left;}
 .pt1{ display: flex; justify-content: space-around; }
-.a-exp{ width: 45vw; }
+.a-exp{ width: 47vw; }
 .a-skills{ width: 30vw; }
 section>aside, section>article{}
-.year{ margin-top: 10px; margin-bottom: 10px; display: block;}
-.work>p{
-    text-align: left;
-}
-.year, .workplace, .workaddr { margin-top: 10px; margin-bottom: 10px; }
-
+.year{ margin-top: 10px; display: block;}
+.work>p, ul, li{text-align: left;}
+.year, .workplace, .workaddr { margin-top: 10px; }
+.year{font-size: large;font-weight: 600;text-decoration: underline; }
+.workplace{font-size: 20px; font-family: Oswald; display: block;}
+.workaddr{font-size: 14px; font-style: italic;}
 .skillpin{
     font-size: 13px;
     border: black 1px solid;
