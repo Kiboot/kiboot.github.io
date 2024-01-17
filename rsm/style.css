@@ -1,7 +1,32 @@
 *{ margin: 0; padding: 0; }
 
+@font-face { font-family: Roboto; src: url(Roboto-Regular.ttf); }
+@font-face { font-family: Oswald; src: url(Oswald-v.ttf); }
+
+:root{
+    --cl-periwinkle:    #CBC5EA;
+    --cl-platinum:      #EAEAEA;
+    --cl-pomp:          #73628A;
+    --cl-daftblue:      #313D5A;
+    --cl-gunmetal:      #183642;
+    --cl-onyx:          #393E41;
+    --cl-timberwolf:    #D3D0CB;
+    --cl-keppel:        #44BBA4;
+    --cl-saffron:       #E7BB41;
+    --cl-charcoal:      #444554;
+    --cl-taupegray:     #7F7B82;
+    --cl-rosequartz:    #BFACB5;
+    --cl-eerieblack:    #172121;
+    --cl-silver:        #BDBDBD;
+    --cl-olivine:       #A1C181;
+    --cl-moonstone:     #5EB1BF;
+    --cl-pomp2:         #9D69A3;
+
+}
+
 /** 
 color palette
+#393E41 - onyx
 eaeaea
 CBC5EA
 73628A
@@ -9,8 +34,7 @@ CBC5EA
 183642
 **/
 
-@font-face { font-family: Roboto; src: url(Roboto-Regular.ttf); }
-@font-face { font-family: Oswald; src: url(Oswald-v.ttf); }
+
 a{ text-decoration: none; color: black;}
 header{
     height: 40vh;
@@ -70,7 +94,7 @@ section>aside, section>article{}
 .work>p, ul, li{text-align: left;}
 .year, .workplace, .workaddr { margin-top: 10px; }
 .year{font-size: large;font-weight: 600;text-decoration: underline; }
-.workplace{font-size: 20px; font-family: Oswald; display: block;}
+.workplace{font-size: 20px; font-family: Oswald; display: block;margin-bottom:2px;}
 .workaddr{font-size: 14px; font-style: italic;}
 .skillpin{
     font-size: 13px;
@@ -80,8 +104,12 @@ section>aside, section>article{}
     display: inline-block;
     margin-bottom: 3px;
 }
-#l1{background-color: #BDBDBD;}
-#l2{background-color: #A1C181;}
-#l3{background-color: #5EB1BF;}
-#l4{background-color: #9D69A3;}
+#l1{background-color: var(--cl-silver);}
+#l2{background-color: var(--cl-olivine);}
+#l3{background-color: var(--cl-moonstone);}
+#l4{background-color: var(--cl-pomp2);}
 .align{ margin-top: 10px; margin-bottom: 10px; }
+.qrbox, .qrcode{
+    text-align: center;
+    margin: auto;
+}
