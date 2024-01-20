@@ -18,7 +18,7 @@
     --cl-eerieblack:    #172121;
     --cl-silver:        #BDBDBD;
     --cl-olivine:       #A1C181;
-    --cl-moonstone:     #5EB1BF;
+    --cl-moonstone:     #5eb0bf38;
     --cl-teagreen:      #d4e6b549;
     --cl-dutchwhite:    #dbd3ad42;
     --cl-apricot:       #f6c5af2f;
@@ -43,6 +43,7 @@ body{
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
+    box-shadow: -1px -1px 16px 0px rgba(0,0,0,0.64);
 }
 .profile{background-color: var(--cl-teagreen);}
 .a-exp{background-color: var(--cl-dutchwhite);}
@@ -102,7 +103,7 @@ li{margin-left: 16px;}
 #l3{background-color: var(--cl-moonstone);}
 #l4{background-color: var(--cl-pomp2);}
 .align{ margin-top: 10px; margin-bottom: 10px; }
-.qrbox{ display:flex; align-items: center;}
+.qrbox{ display:flex; align-items: center; background-color: var(--cl-moonstone);}
 .qrcode{
     background: url('pdf-qr.png') no-repeat center;
     background-size: cover;
